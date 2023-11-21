@@ -1,0 +1,51 @@
+Class OriginalItems
+- Collection of original items stored in a vector or something
+- float = 4 bytes
+- double = 8 bites
+
+
+Function: 
+getMedians, recalculates the values of each vector entry and returns these in a vector
+addItem, adds item to the array (like) vector. 
+
+
+Class BinaryItem
+ - needs the means
+ - binaryItem
+ - pointer = 8bytes
+
+
+Class BinaryItems
+- #k arrays containing binary items, for each cluster one. 
+- #k length array containing the cluster centroids. 
+Constructed using originalDB
+Construction 
+addItem, adds item to the data base. 
+
+
+
+Class Database
+-OriginalItems
+-BinaryItems
+
+
+================
+Clustering
+- using hamming distance
+- lable based on hamming distance
+
+How to retrieve?
+-predict cluster
+For all items in this cluster, calculate the hamming distance 
+Return the list of the top k*c candidates
+
+From this k*c do an intensive search. 
+
+K = the number of vectors we would like to find
+C = some constant
+
+Clustering binary data should be avoided according to 
+
+https://arxiv.org/pdf/2001.01809.pdf => 
+
+PCA for dimension reduction?
