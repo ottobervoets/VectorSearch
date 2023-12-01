@@ -105,6 +105,7 @@ $(CXX_PROGRAMS): %: %.o $(LIBRARY)
 	$(ENSURE_DEPDIR)
 	$(QUIET) $(CXX) $(CXXFLAGS) -o $@ $< $(LDFLAGS)
 	@$(ADD_EDGES)
+	./main
 $(CXX_PROGRAMS): ACTION = link
 
 # The library contains all object files that don't become programs.
@@ -123,6 +124,7 @@ $(CXX_PRECOMPILED_HEADERS): %$(CXX_IH_EXT)$(CXX_PCH_EXT): %$(CXX_IH_EXT)
 	$(ENSURE_DEPDIR)
 	$(QUIET) $(CXX) $(CXXFLAGS) $(DEPFLAGS) -x c++-header -o $@ $<
 	@$(ADD_EDGES)
+	
 
 # The use of $(DEPFLAGS) causes a dependency file to also be written.
 # (But, importantly, Make is not aware of that that!)
@@ -171,6 +173,8 @@ help:
 	@sed -E -n '/$(HELP_EXPR)/ { s/$(HELP_EXPR)/  / ; p }' $(word 1,$(MAKEFILE_LIST))
 
 .PHONY: show help
+
+	
 
 # 'make clean' removes all generated files.
 clean: depclean pchclean

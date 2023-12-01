@@ -8,25 +8,19 @@
 class OriginalItems
 {
     private:
-        // std::vector<double> data;
+            std::vector<std::vector<double>> data;
+            std::vector<double> medians;
+
+            void setMedians();
     public:
         OriginalItems();
-        // {
-        //     std::cout << "constructor\n";
-        // }
+        OriginalItems(std::vector<std::vector<double>> data);
 
-        // void add(double Item);
-        // void add(std::vector<double> Items);
+        void build();
 
-
-
-    //class containig the original items. 
+        void testprint(int loca, int locb);
+        void printMedians();
 
 };
-
-// OriginalItems::OriginalItems()
-// {
-//     std::cout << "Default constructor";
-// }
 
 #endif
