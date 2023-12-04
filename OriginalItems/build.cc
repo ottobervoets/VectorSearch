@@ -3,5 +3,5 @@
 #include "OriginalItems.ih"
 
 void OriginalItems::build() {
-
+	setMedians();
 }

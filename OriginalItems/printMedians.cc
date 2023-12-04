@@ -5,5 +5,5 @@
 void OriginalItems::printMedians() {
 	copy(medians.begin(),
          medians.end(),
-         ostream_iterator<int>(cout, " "));
+         std::ostream_iterator<int>(std::cout, " "));
 }

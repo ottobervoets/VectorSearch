@@ -1,1 +1,7 @@
+#include "CompressedItems.h"
+
 #include <iostream>
+#include <boost/dynamic_bitset.hpp>
+
+
+using namespace std;

@@ -1,0 +1,9 @@
+// CompressedItem.ih
+
+#include "CompressedItem.h"
+
+#include <vector>
+#include <boost/dynamic_bitset.hpp>
+#include <iostream>
+
+using namespace std;

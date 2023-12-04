@@ -21,6 +21,20 @@ class OriginalItems
         void testprint(int loca, int locb);
         void printMedians();
 
+        inline const std::vector<std::vector<double>> &getData();
+        inline const std::vector<double> &getMedians();
+
 };
+
+inline const std::vector<std::vector<double>> &OriginalItems::getData()
+{
+    return data;
+}
+
+inline const std::vector<double> &OriginalItems::getMedians()
+{
+    return medians;
+}
+
 
 #endif
