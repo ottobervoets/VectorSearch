@@ -2,7 +2,6 @@
 #include <vector>
 #include "OriginalItems/OriginalItems.h"
 #include "CompressedItems/CompressedItems.h"
-#include "CompressedItem/CompressedItem.h"
 
 using namespace std;
 

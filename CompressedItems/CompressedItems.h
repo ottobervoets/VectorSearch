@@ -2,7 +2,7 @@
 
 #define COMPRESSEDITEMS_H 
 
-#include "../CompressedItem/CompressedItem.h"
+#include "CompressedItem/CompressedItem.h"
 #include <vector>
 
 class CompressedItems 
